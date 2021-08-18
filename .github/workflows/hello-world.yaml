@@ -31,10 +31,10 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: Download repo
-          uses: actions/download-artifact@v2
-          with:
-              name: code
-              path: .
+        uses: actions/download-artifact@v2
+        with:
+          name: code
+          path: .
       - name: Test
         run: ./ci/unit-test-app.sh
     needs: Clone-down
