@@ -77,5 +77,5 @@ jobs:
             name: buildcode
             path: .
       - name: CompTest
-        run: chmod +x ./ci/component-test.sh && export GIT_COMMIT="GA-$GITHUB_SHA && ./ci/component-test.sh
+        run: chmod +x ./ci/component-test.sh && export GIT_COMMIT="GA-$GITHUB_SHA" && ./ci/component-test.sh
   
