@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
         with:
-          name: my-artifact
+          name: code
           path: .
   Build:
     name: Build
